@@ -1,0 +1,44 @@
+Source: python-pika-pool
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>,
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               openstack-pkg-tools,
+               python-all,
+               python-setuptools,
+               python3-all,
+               python3-setuptools,
+Build-Depends-Indep: python-pika (>= 0.9),
+                     python-pytest,
+                     python3-pika (>= 0.9),
+                     python3-pytest,
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-pika-pool.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-pika-pool.git
+Homepage: https://github.com/bninja/pika-pool
+
+Package: python-pika-pool
+Architecture: all
+Depends: python-pika (>= 0.9),
+         ${misc:Depends},
+         ${python:Depends},
+Description: Pika connection pooling - Python 2.7
+ Pika-pool is a Pika connection pooling inspired by flask-pika and SQLAlchemy
+ pool.Pool. Typically you'll go with local RabbitMQ shovels, krazee-eyez kombu,
+ etc. But this works too.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-pika-pool
+Architecture: all
+Depends: python3-pika (>= 0.9),
+         ${misc:Depends},
+         ${python3:Depends},
+Description: Pools for pikas. - Python 3.x
+ Pika-pool is a Pika connection pooling inspired by flask-pika and SQLAlchemy
+ pool.Pool. Typically you'll go with local RabbitMQ shovels, krazee-eyez kombu,
+ etc. But this works too.
+ .
+ This package contains the Python 3.x module.
