@@ -22,11 +22,12 @@ override_dh_auto_install:
 
 override_dh_auto_test:
 ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
-	set -e ; for pyvers in $(PYTHONS) $(PYTHON3S); do \
-		rabbitmq-server & export RABBIT_PID=$$! ; \
-		python$$pyvers -m pytest test.py ; \
-		kill -9 $$RABBIT_PID ; \
-	done
+	echo "Cannot run unit tests, as it needs rabbitmq-server running"
+#	set -e ; for pyvers in $(PYTHONS) $(PYTHON3S); do \
+#		rabbitmq-server & export RABBIT_PID=$$! ; \
+#		python$$pyvers -m pytest test.py ; \
+#		kill -9 $$RABBIT_PID ; \
+#	done
 endif
 
 override_dh_clean:
