@@ -2,12 +2,12 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: pika-pool
 Source: https://github.com/bninja/pika-pool
 
-Files: debian/*
-Copyright: (c) 2014, Thomas Goirand <zigo@debian.org>
-License: Apache-2
-
 Files: *
 Copyright: (c) 2013, egon <egon@gb.com>
+License: Apache-2
+
+Files: debian/*
+Copyright: (c) 2014-2016, Thomas Goirand <zigo@debian.org>
 License: Apache-2
 
 License: Apache-2
