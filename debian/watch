@@ -1,3 +1,4 @@
 version=3
-http://pypi.python.org/packages/source/p/pika-pool pika-pool-(.*).tar.gz
+opts=uversionmangle=s/(rc|a|b|c)/~$1/ \
+http://pypi.debian.net/pika-pool/pika-pool-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))
 
