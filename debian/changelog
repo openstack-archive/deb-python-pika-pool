@@ -1,6 +1,8 @@
 python-pika-pool (0.1.3-2) UNRELEASED; urgency=medium
 
   * d/watch: Get orig tarball from pypi.debian.net.
+  * d/control, d/rules, d/tests/*: Add autopkgtests to run unit tests since
+    they require a running rabbitmq-server.
 
  -- Corey Bryant <corey.bryant@canonical.com>  Fri, 04 Mar 2016 13:54:32 -0500
 

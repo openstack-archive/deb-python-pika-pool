@@ -1,0 +1,3 @@
+Tests: pika-pool-unit-tests
+Depends: python-pytest, python3-pytest, python-pika, python3-pika, rabbitmq-server
+Restrictions: needs-root

@@ -1,0 +1,12 @@
+#!/bin/bash
+#---------------------------
+# Run pika-pool unit tests
+#---------------------------
+set -e
+
+PYTHONS=$(pyversions -s)
+PYTHON3S=$(py3versions -s)
+
+for pyvers in $PYTHONS $PYTHON3S; do
+    $pyvers -m pytest test.py
+done

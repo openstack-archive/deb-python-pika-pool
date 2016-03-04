@@ -18,6 +18,7 @@ Standards-Version: 3.9.7
 Vcs-Browser: https://anonscm.debian.org/gitweb/?p=openstack/python-pika-pool.git
 Vcs-Git: https://anonscm.debian.org/git/openstack/python-pika-pool.git
 Homepage: https://github.com/bninja/pika-pool
+XS-Testsuite: autopkgtest
 
 Package: python-pika-pool
 Architecture: all
